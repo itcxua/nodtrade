@@ -1,0 +1,97 @@
+/**
+ * Rolso
+ * Modern cargo, transport and logistics HTML Template. Exclusively built for transport, logistics, delivery, moving, and cargo websites.
+ * Exclusively on https://1.envato.market/rolso-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// about section
+
+.about {
+    &_media {
+        height: 330px;
+        margin-bottom: 15px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &_main {
+
+        &-text {
+            margin: 15px 0 30px;
+        }
+
+        .contact_data {
+            margin-bottom: 0;
+
+            &-item {
+                &:nth-of-type(2) {
+                    grid-area: 1 / 1 / 2 / 2;
+                }
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .about {
+        &_media {
+            height: 450px;
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .about {
+        &_media {
+            height: 600px;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .about {
+        &_media {
+            height: auto;
+            margin-bottom: 0;
+            margin-right: 30px;
+            align-self: stretch;
+            display: none;
+        }
+
+        &_main {
+            .contact_data {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .about {
+        &_media {
+            width: 450px;
+            display: block;
+            margin-right: 50px;
+        }
+
+        &_main {
+            width: calc(100% - 500px);
+            &-text {
+                margin-bottom: 50px;
+            }
+            .contact_data {
+                margin-left: -80px;
+            }
+        }
+    }
+}

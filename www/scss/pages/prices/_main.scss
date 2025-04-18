@@ -1,0 +1,101 @@
+/**
+ * Rolso
+ * Modern cargo, transport and logistics HTML Template. Exclusively built for transport, logistics, delivery, moving, and cargo websites.
+ * Exclusively on https://1.envato.market/rolso-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// pricing main content
+
+.iOS {
+    .page {
+        background: url("../img/placeholder.jpg") no-repeat center / cover;
+    }
+}
+
+.page {
+    background: url("../img/placeholder.jpg") no-repeat center fixed / cover;
+}
+
+.pricing {
+    &_card {
+        &--highlight {
+            background: $gradient;
+            color: #fff;
+
+            .pricing_card-main {
+                .level {
+                    color: #fff;
+                }
+
+                .saving {
+                    color: $lightgray;
+                }
+            }
+
+            .pricing_card-plan {
+                .plan, .annual {
+                    color: #fff;
+                }
+            }
+
+            .pricing_card-features {
+                .icon {
+                    color: #fff;
+                }
+            }
+
+            .pricing_card-btn {
+                border: 1px solid #fff;
+                background: transparent;
+            }
+        }
+
+        &-main, &-plan {
+            border-bottom: none;
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 991.98px) {
+    .pricing {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+
+        &_card {
+            display: flex;
+            justify-content: space-between;
+            padding: 60px;
+
+            &-main {
+                flex-direction: column;
+                justify-content: flex-start;
+
+                .level {
+                    margin-bottom: 10px;
+                }
+            }
+
+            &-plan {
+                position: relative;
+                top: -5px;
+
+                .plan {
+                    margin-bottom: 10px;
+                }
+            }
+
+            &-main, &-plan,
+            &-features {
+                padding: 0;
+            }
+        }
+    }
+}

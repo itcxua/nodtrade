@@ -1,0 +1,200 @@
+/**
+ * Rolso
+ * Modern cargo, transport and logistics HTML Template. Exclusively built for transport, logistics, delivery, moving, and cargo websites.
+ * Exclusively on https://1.envato.market/rolso-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// services section
+
+.services {
+    margin-top: -60px;
+    position: relative;
+    z-index: 10;
+    &_list {
+        background: #fff;
+        box-shadow: 0 2px 25px rgba(0, 0, 142, 0.15);
+
+        &-item {
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                background: $gradient;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                transition: opacity .3s ease-in-out;
+                opacity: 0;
+            }
+
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                padding: 40px 30px 30px 30px;
+            }
+
+            &:nth-of-type(odd) {
+                .media {
+                    color: $theme2;
+                }
+            }
+
+            &:nth-of-type(even) {
+                .media {
+                    color: $theme1;
+                }
+            }
+
+            &:hover {
+
+                &:before {
+                    opacity: 1;
+                }
+
+                .media, .main_title {
+                    color: #fff !important;
+                }
+
+                .main_text {
+                    color: $lightgray;
+                }
+            }
+
+            &:nth-of-type(2) {
+                border-top: 1px solid $lightgray;
+                border-bottom: 1px solid $lightgray;
+            }
+
+            &:nth-of-type(3) {
+                .media {
+                    color: $theme2;
+                }
+            }
+
+            .media {
+                margin-bottom: 15px;
+
+                svg {
+                    max-width: 50px;
+                    max-height: 50px;
+                }
+            }
+
+            .main_title {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .media, .main {
+                position: relative;
+                z-index: 3;
+            }
+
+            .media, .main_title {
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .services {
+        &_list {
+            &-item {
+                .wrapper {
+                    padding: 60px 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .services {
+        margin-top: -80px;
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .services {
+        margin-top: -120px;
+
+        &_list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            &-item {
+                &:nth-of-type(2) {
+                    border: none;
+
+                    .wrapper {
+                        position: relative;
+
+                        &:before, &:after {
+                            content: '';
+                            position: absolute;
+                            transform: translateY(-50%);
+                            top: 50%;
+                            width: 1px;
+                            height: calc(100% - 40px);
+                            background: $lightgray;
+                        }
+
+                        &:after {
+                            bottom: unset;
+                            left: unset;
+                            right: 0;
+                        }
+
+                        &:before {
+                            left: 0;
+                        }
+                    }
+                }
+
+                .media {
+                    svg {
+                        max-width: 70px;
+                        max-height: 70px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .services {
+        margin-top: -103px;
+        position: relative;
+        z-index: 10000;
+
+        &_list {
+            &-item {
+                .wrapper {
+                    flex-direction: row;
+                    text-align: left;
+
+                    .media {
+                        margin-bottom: 0;
+                        margin-right: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

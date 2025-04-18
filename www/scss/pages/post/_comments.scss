@@ -1,0 +1,223 @@
+/**
+ * Rolso
+ * Modern cargo, transport and logistics HTML Template. Exclusively built for transport, logistics, delivery, moving, and cargo websites.
+ * Exclusively on https://1.envato.market/rolso-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// comments section
+
+.post {
+    &_comments {
+        order: 2;
+
+        &-wrapper {
+            @include Card;
+            padding: 30px;
+        }
+
+        &-header {
+            margin-bottom: 30px;
+        }
+
+        &-list {
+            margin-bottom: 40px;
+
+            &_item {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                .media {
+                    width: 40px;
+                    height: 40px;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .main {
+                    width: calc(100% - 55px);
+
+                    &_comment {
+                        margin-left: -55px;
+                    }
+
+                    &_panel {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+
+                        &-name {
+                            font-family: $headerFont;
+                            font-weight: 600;
+                            color: $headerColor;
+                            width: 100%;
+                        }
+
+                        &-date {
+                            display: flex;
+                            align-items: center;
+                            line-height: 1;
+                            color: #6D6D6D;
+
+                            .icon {
+                                color: $theme1;
+                                margin-right: 5px;
+                            }
+                        }
+
+                        &-reply {
+                            color: $theme2;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-form {
+            .field, .btn {
+                width: 100%;
+            }
+
+            .btn {
+                margin-top: 30px;
+            }
+
+            textarea.field {
+                min-height: 170px;
+                padding: 10px 20px;
+            }
+
+            &_row {
+                margin-bottom: 20px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+
+                .column {
+                    margin-bottom: 20px;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .post {
+        &_comments {
+            &-wrapper {
+                padding: 80px 60px;
+            }
+
+            &-list {
+                &_item {
+                    .media {
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    .main {
+                        width: calc(100% - 95px);
+
+                        &_comment {
+                            margin-left: 0;
+                        }
+
+                        &_panel {
+                            flex-wrap: nowrap;
+
+                            &-name {
+                                width: unset;
+                                margin-right: 35px;
+                            }
+
+                            &-date {
+                                flex-grow: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-form {
+                .btn {
+                    width: fit-content;
+                    margin-left: auto;
+                }
+
+                &_row {
+                    margin-bottom: 20px;
+
+                    &:first-of-type {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .column {
+                            margin-bottom: 0;
+                            width: calc(50% - 15px);
+                        }
+                    }
+
+                    .column {
+                        margin-bottom: 20px;
+
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .post {
+        &_comments {
+            &-header {
+                margin-bottom: 40px;
+            }
+
+            &-list {
+                margin-bottom: 60px;
+            }
+
+            &-form {
+                .btn {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .post {
+        &_comments {
+            width: calc(100% - 370px);
+            order: 3;
+            padding-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,185 @@
+/**
+ * Rolso
+ * Modern cargo, transport and logistics HTML Template. Exclusively built for transport, logistics, delivery, moving, and cargo websites.
+ * Exclusively on https://1.envato.market/rolso-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// warehouse main content
+
+.iOS {
+    .page {
+        background: url("../img/placeholder.jpg") no-repeat center / cover;
+    }
+}
+
+.page {
+    background: url("../img/placeholder.jpg") no-repeat center fixed / cover;
+}
+
+.content {
+    padding-bottom: 0;
+
+    &_article {
+        margin-bottom: 60px;
+
+        &-address {
+            margin: 15px 0 30px;
+            line-height: 1;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+
+            .icon {
+                color: $theme1;
+                margin-right: 10px;
+            }
+        }
+
+        &-cover {
+            height: 180px;
+            margin-bottom: 30px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        &-text {
+            margin-bottom: 15px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        &-gallery {
+            margin: 30px 0;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+
+            &_item {
+                height: 200px;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    transition: .5s ease-in-out;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+        &-list {
+            margin: 25px 0;
+
+            &_item {
+                margin-bottom: 5px;
+
+                .icon {
+                    color: $theme1;
+                    position: relative;
+                    top: 1px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    &_sidebar {
+        .sidebar_block-header {
+            margin-bottom: 30px;
+        }
+
+        .list {
+            &-item {
+                display: flex;
+                margin-bottom: 20px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+
+                .media {
+                    color: $theme2;
+                    width: 42px;
+                    margin-right: 15px;
+                }
+
+                .main {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 14px;
+                    line-height: 1.7;
+                    font-family: $headerFont;
+                    color: $headerColor;
+                    width: calc(100% - 57px);
+
+                    &_title {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .content {
+        &_article {
+            &-cover {
+                height: 300px;
+            }
+
+            &-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .content {
+        &_article {
+            width: calc(100% - 400px);
+            margin-bottom: 0;
+
+            &-cover {
+                height: 400px;
+            }
+
+            &-address {
+                margin: 25px 0 40px;
+            }
+
+            &-text {
+                margin-bottom: 25px;
+            }
+
+            &-gallery {
+                margin: 40px 0 30px;
+            }
+
+            &-list {
+                margin: 25px 0;
+            }
+        }
+
+        &_sidebar {
+            width: 330px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+# Включаем модуль mod_rewrite
+RewriteEngine On
+# Устанавливаем базовый путь
+RewriteBase /
+RewriteRule ^prices$ prices.php [L]
+RewriteRule ^EgorovAdmin/$ admin.php [L]
+
+RewriteRule ^contacts$ contacts.php [L]
+RewriteRule ^services$ services.php [L]
+RewriteRule ^about$ about.php [L]
+RewriteRule ^faq$ faq.php [L]
+RewriteRule ^calculator$ calculator.php [L]
+RewriteRule ^transportation_bulk_cargo$ transportation_bulk_cargo.php [L]
+RewriteRule ^transportation_complete_cargo$ transportation_complete_cargo.php [L]
+RewriteRule ^transportation_project_cargo$ transportation_project_cargo.php [L]
+RewriteRule ^transportation_liquid_cargo$ transportation_liquid_cargo.php [L]
+#ua version
+RewriteRule ^contacts/ua$ ua/contacts.php [L]
+RewriteRule ^services/ua$ ua/services.php [L]
+RewriteRule ^about/ua$ ua/about.php [L]
+RewriteRule ^calculator/ua$ ua/calculator.php [L]
+RewriteRule ^transportation_bulk_cargo/ua$ ua/transportation_bulk_cargo.php [L]
+RewriteRule ^transportation_complete_cargo/ua$ ua/transportation_complete_cargo.php [L]
+RewriteRule ^transportation_project_cargo/ua$ ua/transportation_project_cargo.php [L]
+RewriteRule ^transportation_liquid_cargo/ua$ ua/transportation_liquid_cargo.php [L]

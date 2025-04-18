@@ -1,0 +1,163 @@
+/**
+ * Rolso
+ * Modern cargo, transport and logistics HTML Template. Exclusively built for transport, logistics, delivery, moving, and cargo websites.
+ * Exclusively on https://1.envato.market/rolso-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// gallery section
+
+.gallery {
+    margin-bottom: 60px;
+    align-items: stretch;
+
+    &_content {
+        background: $gradient;
+        padding: 30px;
+
+        &-title {
+            color: #fff;
+        }
+
+        &-text {
+            color: $lightgray;
+            margin: 10px 0 30px;
+        }
+
+        &-wrapper {
+            .title {
+                color: $lightgray;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .link {
+                color: #fff;
+            }
+        }
+    }
+
+    &_list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        &-item {
+            height: 225px;
+            overflow: hidden;
+
+            .link {
+                height: 100%;
+                position: relative;
+                display: block;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0, 0, 142, 0.1);
+                    transition: opacity .4s ease-in-out;
+                    opacity: 0;
+                    z-index: 2;
+                }
+
+                img {
+                    height: 100%;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                &:hover {
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .gallery {
+        &_content {
+            padding: 100px;
+        }
+
+        &_list {
+            &-item {
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .gallery {
+        margin-bottom: 80px;
+
+        &_list {
+            &-item {
+                height: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .gallery {
+        margin-bottom: 120px;
+
+        &_list {
+            &-item {
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .gallery {
+        display: flex;
+        align-items: stretch;
+
+        &_content {
+            width: 640px;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &-title {
+                max-width: 230px;
+            }
+
+            &-text {
+                margin: 10px 0 40px;
+            }
+
+            &-wrapper {
+                .title {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        &_list {
+            grid-template-columns: repeat(4, 1fr);
+            width: calc(100% - 640px);
+
+            &-item {
+                height: auto;
+            }
+        }
+    }
+}

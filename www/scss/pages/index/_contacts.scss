@@ -1,0 +1,80 @@
+/**
+ * Rolso
+ * Modern cargo, transport and logistics HTML Template. Exclusively built for transport, logistics, delivery, moving, and cargo websites.
+ * Exclusively on https://1.envato.market/rolso-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// contacts section
+
+.contacts {
+    &_header {
+        max-width: 520px;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        grid-gap: 30px;
+
+        .contact_data {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 767.98px) {
+    .contacts {
+        &_header {
+            text-align: center;
+            margin: 0 auto 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .contacts {
+        &_header {
+            margin: 0 auto 50px;
+        }
+
+        .wrapper {
+            grid-gap: 60px;
+
+            .contact_data {
+                grid-gap: 30px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .contacts {
+        &_header {
+            text-align: left;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .wrapper {
+            grid-template-columns: 392px 670px;
+            align-items: flex-end;
+            justify-content: space-between;
+            position: relative;
+
+            .contact_data {
+                grid-template-columns: 1fr;
+                grid-gap: 30px;
+                order: -1;
+            }
+        }
+    }
+}

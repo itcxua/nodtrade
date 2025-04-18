@@ -1,0 +1,287 @@
+/**
+ * Rolso
+ * Modern cargo, transport and logistics HTML Template. Exclusively built for transport, logistics, delivery, moving, and cargo websites.
+ * Exclusively on https://1.envato.market/rolso-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// about sections
+
+.about {
+    padding-top: 0;
+
+    &_main {
+
+        .block {
+            margin-bottom: 40px;
+        }
+
+        &-text {
+            margin: 15px 0;
+        }
+
+        &-list {
+            margin-bottom: 30px;
+
+            &_item {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                line-height: 1.3;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+
+                &--highlight {
+                    font-weight: 600;
+                }
+
+                .icon {
+                    color: $theme1;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        &-numbers {
+            &_item {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+
+                &:nth-of-type(odd) {
+                    .wrapper {
+                        .suffix, .countNum {
+                            color: $theme1 !important;
+                        }
+                    }
+                }
+
+                &:nth-of-type(even) {
+                    .wrapper {
+                        .suffix, .countNum {
+                            color: $theme2 !important;
+                        }
+                    }
+                }
+
+                .countNum {
+                    line-height: 1;
+                }
+
+                .suffix {
+                    &--plus {
+                        font-weight: 400;
+                    }
+
+                    &--word {
+                        font-size: 20px;
+                        font-family: $headerFont;
+                        position: relative;
+                        left: -2px;
+                    }
+                }
+            }
+        }
+    }
+
+    &_gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin-top: 40px;
+
+        &-item {
+            height: 300px;
+            overflow: hidden;
+            backface-visibility: hidden;
+
+            img {
+                will-change: transform;
+                transition: transform .4s ease-in-out;
+                height: 100%;
+                width: calc(100% + 1px);
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .about {
+        &_main {
+            &-btn {
+                margin: unset;
+            }
+
+            &-numbers {
+                display: flex;
+                gap: 10px;
+
+                &_item {
+                    margin-bottom: 0;
+                    width: calc(100% / 3);
+                    text-align: center;
+                }
+            }
+        }
+
+        &_gallery {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .about {
+        &_main {
+            .block {
+                max-width: 500px;
+            }
+
+            &-list {
+                margin-bottom: 40px;
+
+                &_item {
+                    margin-bottom: 15px;
+                }
+            }
+
+            &-numbers {
+                &_item {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .about {
+        &_main {
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+
+            .block {
+                max-width: 500px;
+                margin-bottom: 0;
+                grid-area: 1 / 1 / 2 / 3;
+            }
+
+            &-numbers {
+                flex-direction: column;
+                gap: 60px;
+
+                &_item {
+                    width: 100%;
+                }
+            }
+
+            &-list {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1599.98px) {
+    .about {
+        position: relative;
+
+        .container {
+            display: flex;
+            align-items: center;
+            padding-right: 0;
+        }
+
+        &_main {
+            display: flex;
+            gap: 80px;
+            width: 100%;
+
+            &-text {
+                margin: 30px 0;
+            }
+        }
+
+        &_gallery {
+            max-width: 50vw;
+            grid-gap: 0;
+            position: absolute;
+            right: 0;
+            margin-top: 0;
+            height: 400px;
+
+            &-item {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1799.98px) {
+    .about {
+        &_gallery {
+            top: -20px;
+            height: 460px;
+        }
+    }
+}
+
+@media screen and (min-width: 1999.98px) {
+    .about {
+        &_main {
+            gap: 110px;
+        }
+    }
+}
+
+@media screen and (min-width: 2199.98px) {
+    .about {
+        &_gallery {
+            &-item {
+                width: 280px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2399.98px) {
+    .about {
+        &_gallery {
+            &-item {
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .about {
+        &_gallery {
+            &-item {
+                width: 330px;
+            }
+        }
+    }
+}

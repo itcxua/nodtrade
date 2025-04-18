@@ -1,0 +1,144 @@
+/**
+ * Rolso
+ * Modern cargo, transport and logistics HTML Template. Exclusively built for transport, logistics, delivery, moving, and cargo websites.
+ * Exclusively on https://1.envato.market/rolso-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// services section
+
+.services {
+    &_list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0;
+
+        &-item {
+            @include Card;
+
+            &:nth-of-type(even) {
+                .icon {
+                    color: $theme1;
+                }
+            }
+
+            &:nth-of-type(odd) {
+                .icon {
+                    color: $theme2;
+                }
+            }
+
+            .media {
+                height: 200px;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .main {
+                padding: 30px;
+
+                &_title {
+                    margin: 10px 0 5px;
+                }
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .services {
+        &_list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0;
+            @include Card;
+
+            &-item {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 50%;
+                box-shadow: none;
+
+                &:nth-of-type(even) {
+                    flex-direction: column-reverse;
+                }
+
+                .media, .main {
+                    height: 50%;
+                }
+
+                .media {
+                    align-self: stretch;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .main {
+                    padding: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    &_title {
+                        margin: 10px 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .services {
+        &_list {
+            &-item {
+                width: 25%;
+
+                .main {
+                    padding: 40px 30px;
+
+                    &_title {
+                        max-width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .services {
+        &_list {
+            &-item {
+                width: 25%;
+
+                .media, .main {
+                    height: 350px;
+                }
+
+                .main {
+                    padding: 40px 30px 40px 45px;
+
+                    &_title {
+                        max-width: 100px;
+                        margin: 20px 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}

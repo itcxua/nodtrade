@@ -1,0 +1,171 @@
+/**
+ * Rolso
+ * Modern cargo, transport and logistics HTML Template. Exclusively built for transport, logistics, delivery, moving, and cargo websites.
+ * Exclusively on https://1.envato.market/rolso-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// post main content
+
+.iOS {
+    .page {
+        background: url("../img/placeholder.jpg") no-repeat center / cover;
+    }
+}
+
+.page {
+    background: url("../img/placeholder.jpg") no-repeat center fixed / cover;
+    margin-bottom: 0;
+}
+
+.post {
+    &_article {
+        order: 1;
+
+        &-breadcrumbs {
+            margin-bottom: 20px;
+
+            .item:last-of-type .link:after {
+                display: none;
+            }
+        }
+
+        .metadata {
+            margin: 20px 0 30px;
+        }
+
+        &-text {
+            margin-bottom: 10px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        &-list {
+            margin: 20px 0;
+
+            &_item {
+                margin-bottom: 5px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+
+                .icon {
+                    color: $theme1;
+                    position: relative;
+                    top: 1px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        &-quote {
+            margin: 20px 0;
+            border-left: 10px solid $theme1;
+            padding: 20px;
+            font-weight: 500;
+
+            &_quote {
+                display: block;
+                quotes: none;
+                margin-bottom: 10px;
+            }
+
+            &_author {
+                .name {
+                    margin-bottom: 5px;
+                    font-family: $headerFont;
+                    font-style: italic;
+                    font-size: 18px;
+                    color: $headerColor;
+                }
+
+                .profession {
+                    color: $primary;
+                }
+            }
+        }
+
+        &-footer {
+            border-top: 1px solid #979797;
+            padding-top: 10px;
+            margin-top: 30px;
+
+            &_tags {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                color: #6D6D6D;
+
+                .icon {
+                    color: $theme1;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.sidebar {
+    order: 3;
+    font-size: 14px;
+
+    &_block {
+        &--nav {
+            font-size: 17px;
+        }
+    }
+}
+
+// media queries
+@media screen and (min-width: 991.98px) {
+    .post {
+        &_article {
+            width: calc(100% - 390px);
+
+            .metadata {
+                margin: 30px 0 40px;
+            }
+
+            &-text {
+                margin-bottom: 20px;
+            }
+
+            &-list {
+                margin: 30px 0;
+
+                &_item {
+                    margin-bottom: 10px;
+
+                    .icon {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            &-quote {
+                margin: 30px 0;
+                padding: 20px 0 20px 20px;
+
+                &_quote {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &-footer {
+                margin-top: 40px;
+            }
+        }
+    }
+    .sidebar {
+        order: 2;
+        width: 330px;
+    }
+}

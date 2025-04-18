@@ -1,0 +1,127 @@
+/**
+ * Rolso
+ * Modern cargo, transport and logistics HTML Template. Exclusively built for transport, logistics, delivery, moving, and cargo websites.
+ * Exclusively on https://1.envato.market/rolso-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// banners section
+
+.quote {
+    &_banners {
+        margin-top: 60px;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+
+        &-banner {
+            position: relative;
+            padding: 30px;
+            overflow: hidden;
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &:first-of-type {
+                .quote_banners-banner_title {
+                    max-width: 125px;
+                }
+            }
+
+            .bg, .bg_overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .bg {
+                z-index: 1;
+
+                img {
+                    height: 100%;
+                }
+
+                &_overlay {
+                    background: linear-gradient(135deg, rgba(0, 0, 142, 0.5) 0%, rgba(1, 114, 128, 0.5) 100%);
+
+                    &--blue {
+                        background: linear-gradient(135deg, rgba(0, 0, 142, 0.8) 0%, rgba(1, 114, 128, 0.8) 100%);
+                    }
+                }
+            }
+
+            .content {
+                position: relative;
+                z-index: 2;
+            }
+
+            &_title {
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+            &_btn {
+                min-width: 100%;
+            }
+
+            &_text {
+                color: $lightgray;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .quote {
+        &_banners {
+            &-banner {
+                padding: 80px 60px;
+                min-height: unset;
+
+                &:last-of-type {
+                    .quote_banners-banner_title {
+                        max-width: 310px;
+                    }
+                }
+
+                &_btn {
+                    min-width: 270px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .quote {
+        &_banners {
+            grid-template-columns: repeat(2, 1fr);
+
+            &-banner {
+                padding: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .quote {
+        &_banners {
+            grid-gap: 40px;
+            margin-top: 80px;
+
+            &-banner {
+                padding: 80px 60px;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+/**
+ * Rolso
+ * Modern cargo, transport and logistics HTML Template. Exclusively built for transport, logistics, delivery, moving, and cargo websites.
+ * Exclusively on https://1.envato.market/rolso-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// quote (request) section
+
+.request {
+    padding-top: 108px;
+
+    &_wrapper {
+        @include Card;
+        padding: 30px;
+        position: relative;
+        z-index: 1000;
+
+        &:before {
+            content: 'Request a quote';
+            position: absolute;
+            left: 50%;
+            top: -48px;
+            height: 48px;
+            width: 280px;
+            background: $accent;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $headerFont;
+            font-weight: 600;
+            font-size: 18px;
+            color: $headerColor;
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .request {
+        &_wrapper {
+            &:before {
+                left: 0;
+                transform: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .request {
+        padding-top: 128px;
+
+        &_wrapper {
+            padding: 80px 60px;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .request {
+        padding-top: 0;
+
+        &_wrapper {
+            padding: 80px 60px;
+            margin-top: -50px;
+        }
+    }
+}

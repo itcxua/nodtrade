@@ -1,0 +1,120 @@
+/**
+ * Rolso
+ * Modern cargo, transport and logistics HTML Template. Exclusively built for transport, logistics, delivery, moving, and cargo websites.
+ * Exclusively on https://1.envato.market/rolso-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// testimonials section
+
+.testimonials {
+    &_header {
+        max-width: 660px;
+        margin: 0 0 30px;
+
+        .highlight {
+            color: $theme1;
+        }
+    }
+
+    &_wrapper {
+        margin: -30px;
+    }
+
+    &_slider {
+        max-width: 780px;
+        margin: 0 auto 60px;
+        padding: 30px;
+
+        &-slide {
+            height: auto;
+            align-self: stretch;
+
+            .main {
+                @include Card;
+                padding: 30px 30px 50px;
+            }
+
+            .author {
+                display: flex;
+                flex-direction: column;
+                margin-top: -30px;
+                padding-left: 30px;
+                gap: 15px;
+
+                &_avatar {
+                    width: 60px;
+                    height: 60px;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.partners .container {
+    padding: 0;
+}
+
+// media queries
+
+@media screen and (min-width: 575.98px) {
+    .testimonials {
+        &_slider {
+            &-slide {
+
+                .main {
+                    padding: 80px 50px 140px 80px;
+                }
+
+                .author {
+                    flex-direction: row;
+                    align-items: flex-end;
+                    margin-top: -60px;
+                    padding-left: 80px;
+                    gap: 30px;
+
+                    &_avatar {
+                        width: 130px;
+                        height: 130px;
+                    }
+
+                    &_info {
+                        .name {
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .testimonials {
+        &_header {
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+
+        &_slider {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .testimonials {
+        &_header {
+            margin: 0 auto 50px;
+        }
+    }
+}

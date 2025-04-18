@@ -1,0 +1,48 @@
+/**
+ * Rolso
+ * Modern cargo, transport and logistics HTML Template. Exclusively built for transport, logistics, delivery, moving, and cargo websites.
+ * Exclusively on https://1.envato.market/rolso-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// services section
+
+.services {
+    padding-top: 0;
+    margin-top: 60px;
+    width: 100%;
+
+    &_header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &_list {
+        margin-bottom: 0;
+        display: block;
+    }
+}
+
+// media queries
+
+@media screen and (min-width: 767.98px) {
+    .services {
+        &_header {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .services {
+        margin-top: 80px;
+        &_header {
+            margin-bottom: 50px;
+        }
+    }
+}
