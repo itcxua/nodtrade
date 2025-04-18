@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Prices | Rolso</title>
+        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+
+        <link rel="stylesheet" href="css/prices.min.css" />
+    </head>
+    <body>
+        <header class="header" data-page="prices">
+            <div class="header_panel">
+                <div class="container d-flex justify-content-center justify-content-md-between align-items-center">
+                    <span class="header_panel-logo">
+                        <a class="logo d-inline-flex align-items-center" href="index.html">
+                            <span class="logo_media">
+                                <svg width="56px" height="37px" viewBox="0 0 56 37" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Combined Shape</title>
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g fill="currentColor" transform="translate(0.000000, -0.000000)">
+                                            <g transform="translate(0.000000, 0.000000)">
+                                                <path
+                                                    d="M37.9730366,0 L56,18.5 L37.9730366,37 L20.0419919,18.5 L25.8616371,12.5121359 L23.0545408,9.458807 L14.4823984,18.5 L30.1911192,35 L28,37 L23.0545408,32 L18.195333,37 L0,18.5 L18.195333,0 L36.0014273,18.5 L30.1911192,24.6483396 L32.9085797,27.4399418 L41.6203395,18.5 L25.8616371,2.43040321 L28,0 L32.9085797,5.20234095 L37.9730366,0 Z M17.9818927,4.43392989 L4.64144645,18.5147247 L17.9818927,32.5955195 L21.0810871,29.6079919 L10.1321127,18.5 L21.0810871,7.28442361 L17.9818927,4.43392989 Z M37.7101843,4.43392989 L35.2883953,7.44356982 L46.1323481,18.5 L35.2883953,29.7451953 L37.7101843,32 L51.3914285,18.5147247 L37.7101843,4.43392989 Z M28,14.5941371 L24.4227574,18.5 L28,22.3996382 L31.7636086,18.5147247 L28,14.5941371 Z"
+                                                ></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <span class="logo_text">Rolso</span>
+                        </a>
+                    </span>
+                    <div class="header_panel-links">
+                        <a class="header_panel-links_link btn btn--regular" href="calculator.html">Калькулятор тарифов</a>
+                        <a class="header_panel-links_link btn btn--regular bordered" href="#">info@logisticstoUkraine.com</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="header_nav">
+                <div class="container d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between flex-lg-row-reverse">
+                    <a class="header_nav-tel h5" href="tel:+1234567890">+38 (067) 410 50 77</a>
+                    <a
+                        class="header_nav-trigger"
+                        href="#"
+                        id="headerTrigger"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#headerMenu"
+                        aria-controls="headerMenu"
+                    >
+                        <svg
+                            width="100%"
+                            height="100%"
+                            enable-background="new 0 0 32 32"
+                            viewBox="0 0 32 32"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="m29.5625 5.3092h-27.125c-1.06854 0-1.9375.86896-1.9375 1.9375s.86896 1.9375 1.9375 1.9375h27.125c1.06812 0 1.9375-.86896 1.9375-1.9375s-.86938-1.9375-1.9375-1.9375z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="m29.5625 14.0625h-27.125c-1.06854 0-1.9375.86896-1.9375 1.9375s.86896 1.9375 1.9375 1.9375h27.125c1.06812 0 1.9375-.86896 1.9375-1.9375s-.86938-1.9375-1.9375-1.9375z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="m29.562 22.816h-27.125c-1.0685 0-1.9375 0.8689-1.9375 1.9375 0 1.0685 0.86896 1.9375 1.9375 1.9375h27.125c1.0681 0 1.9375-0.86896 1.9375-1.9375 0-1.0686-0.86938-1.9375-1.9375-1.9375z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </a>
+                    <div class="header_nav-wrapper collapse" id="headerMenu">
+                        <ul class="header_nav-menu d-flex flex-column flex-lg-row">
+                            <li class="header_nav-menu_item dropdown">
+                                <a
+                                    class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                    href="index.html"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#homeMenu"
+                                    data-trigger="dropdown"
+                                    aria-expanded="false"
+                                    aria-controls="homeMenu"
+                                    data-page="home"
+                                >
+                                    Главная
+                                    <i class="icon-caret-down-solid icon"></i>
+                                </a>
+                                <div class="dropdown-menu collapse" id="homeMenu">
+                                    <ul class="dropdown-list">
+                                        <li class="list-item" data-main="true">
+                                            <a class="dropdown-item nav-item" data-page="home" href="index.html" data-main="true"> Home </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="home2" href="index2.html"> Home 2 </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="home3" href="index3.html"> Home 3 </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_nav-menu_item dropdown">
+                                <a
+                                    class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                    href="about.html"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#aboutMenu"
+                                    data-trigger="dropdown"
+                                    aria-expanded="false"
+                                    aria-controls="aboutMenu"
+                                    data-page="about"
+                                >О нас<i class="icon-caret-down-solid icon"></i>
+                                </a>
+                                <div class="dropdown-menu collapse" id="aboutMenu">
+                                    <ul class="dropdown-list">
+                                        <li class="list-item" data-main="true">
+                                            <a class="dropdown-item nav-item" data-page="about" href="about.html" data-main="true">
+                                                About
+                                            </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="quote" href="quote.html"> Quote </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="warehouse" href="warehouse.html"> Warehouse </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="faq" href="faq.html"> FAQs </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="prices" href="prices.html"> Prices </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" href="404.html"> 404 </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_nav-menu_item dropdown">
+                                <a
+                                    class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                    href="services.html"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#servicesMenu"
+                                    data-trigger="dropdown"
+                                    aria-expanded="false"
+                                    aria-controls="servicesMenu"
+                                    data-page="services"
+                                >Услуги<i class="icon-caret-down-solid icon"></i>
+                                </a>
+                                <div class="dropdown-menu collapse" id="servicesMenu">
+                                    <ul class="dropdown-list">
+                                        <li class="list-item" data-main="true">
+                                            <a class="dropdown-item nav-item" data-page="services" href="services.html" data-main="true">
+                                                Services
+                                            </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="service" href="service.html"> Single service </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="projects" href="projects.html"> Projects </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="calculator" href="calculator.html"> Calculator </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_nav-menu_item dropdown">
+                                <a
+                                    class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                    href="blog.html"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#blogMenu"
+                                    data-trigger="dropdown"
+                                    aria-expanded="false"
+                                    aria-controls="blogMenu"
+                                    data-page="blog"
+                                >Блог<i class="icon-caret-down-solid icon"></i>
+                                </a>
+                                <div class="dropdown-menu collapse" id="blogMenu">
+                                    <ul class="dropdown-list">
+                                        <li class="list-item" data-main="true">
+                                            <a class="dropdown-item nav-item" data-page="blog" href="blog.html" data-main="true"> Blog </a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a class="dropdown-item nav-item" data-page="post" href="post.html"> Single post </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_nav-menu_item">
+                                <a class="nav-item nav-link" href="contacts.html" data-page="contacts">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <header class="page">
+            <div class="page_overlay"></div>
+
+            <div class="container">
+                <div class="page_card d-flex flex-column">
+                    <h1 class="page_card-title">Наши тарифы</h1>
+                    <ul class="page_card-breadcrumbs breadcrumbs">
+                        <li class="page_card-breadcrumbs_item item">
+                            <a class="link" href="index.html">Главная</a>
+                        </li>
+
+                        <li class="page_card-breadcrumbs_item item">
+                            <a class="link" href="about.html">О нас</a>
+                        </li>
+
+                        <li class="page_card-breadcrumbs_item item">
+                            <span class="current">Тарифы</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- prices content start -->
+        <main>
+            <section class="plans section">
+                <div class="container">
+                    <div class="plans_header">
+                        <h2 class="plans_header-title" data-aos="fade-in">The right price for you, whoever you are</h2>
+
+                        <p class="plans_header-text" data-aos="fade-in" data-aos-delay="50">
+                            Donec varius, nisi sed cursus varius, dolor dui vehicula enim, eu porttitor lacus metus vitae nibh. Etiam
+                            efficitur lorem et lorem ultricies mollis. Sed non bibendum orci. Cras non mi sagittis, vehicula erat ut,
+                            posuere orci
+                        </p>
+                    </div>
+                    <ul class="pricing">
+                        <li class="pricing_card" data-aos="fade-up">
+                            <div class="pricing_card-main">
+                                <h5 class="level">Basic</h5>
+                                <span class="saving">Save 10%</span>
+                            </div>
+                            <div class="pricing_card-plan">
+                                <span class="plan h3">
+                                    $25
+                                    <span class="month">/mo</span>
+                                </span>
+                                <span class="annual">Only $85 per year</span>
+                            </div>
+                            <ul class="pricing_card-features">
+                                <li class="pricing_card-features_item">
+                                    <i class="icon-check icon"></i>
+                                    Ut consequat rhoncus nisi vel
+                                </li>
+                                <li class="pricing_card-features_item">
+                                    <i class="icon-check icon"></i>
+                                    Class aptent taciti sociosqu
+                                </li>
+                                <li class="pricing_card-features_item">
+                                    <i class="icon-check icon"></i>
+                                    Proin non mattis augue. In vehicula
+                                </li>
+                            </ul>
+                            <a class="pricing_card-btn btn btn--regular" href="#">Buy Now</a>
+                        </li>
+                        <li class="pricing_card pricing_card--highlight" data-aos="fade-up" data-aos-delay="50">
+                            <div class="pricing_card-main">
+                                <h5 class="level">Full Pack</h5>
+                                <span class="saving">Save 20%</span>
+                            </div>
+                            <div class="pricing_card-plan">
+                                <span class="plan h3">
+                                    $75
+                                    <span class="month">/mo</span>
+                                </span>
+                                <span class="annual">Only $165 per year</span>
+                            </div>
+                            <ul class="pricing_card-features">
+                                <li class="pricing_card-features_item">
+                                    <i class="icon-check icon"></i>
+                                    Ut consequat rhoncus nisi vel
+                                </li>
+                                <li class="pricing_card-features_item highlight">
+                                    <i class="icon-check icon"></i>
+                                    Class aptent taciti sociosqu
+                                </li>
+                                <li class="pricing_card-features_item">
+                                    <i class="icon-check icon"></i>
+                                    Proin non mattis augue. In vehicula
+                                </li>
+                            </ul>
+                            <a class="pricing_card-btn btn btn--regular" href="#">Buy Now</a>
+                        </li>
+                        <li class="pricing_card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="pricing_card-main">
+                                <h5 class="level">Advanced</h5>
+                                <span class="saving">Save 15%</span>
+                            </div>
+                            <div class="pricing_card-plan">
+                                <span class="plan h3">
+                                    $35
+                                    <span class="month">/mo</span>
+                                </span>
+                                <span class="annual">Only $120 per year</span>
+                            </div>
+                            <ul class="pricing_card-features">
+                                <li class="pricing_card-features_item">
+                                    <i class="icon-check icon"></i>
+                                    Ut consequat rhoncus nisi vel
+                                </li>
+                                <li class="pricing_card-features_item">
+                                    <i class="icon-check icon"></i>
+                                    Class aptent taciti sociosqu
+                                </li>
+                                <li class="pricing_card-features_item">
+                                    <i class="icon-check icon"></i>
+                                    Proin non mattis augue. In vehicula
+                                </li>
+                            </ul>
+                            <a class="pricing_card-btn btn btn--regular" href="#">Buy Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <!-- prices content end -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_main d-md-flex flex-wrap justify-content-between">
+                    <div class="footer_main-block footer_main-block--about">
+                        <span class="brand">
+                            <a class="logo d-inline-flex align-items-center" href="index.html">
+                                <span class="logo_media">
+                                    <svg width="56px" height="37px" viewBox="0 0 56 37" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <title>Combined Shape</title>
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g fill="currentColor" transform="translate(0.000000, -0.000000)">
+                                                <g transform="translate(0.000000, 0.000000)">
+                                                    <path
+                                                        d="M37.9730366,0 L56,18.5 L37.9730366,37 L20.0419919,18.5 L25.8616371,12.5121359 L23.0545408,9.458807 L14.4823984,18.5 L30.1911192,35 L28,37 L23.0545408,32 L18.195333,37 L0,18.5 L18.195333,0 L36.0014273,18.5 L30.1911192,24.6483396 L32.9085797,27.4399418 L41.6203395,18.5 L25.8616371,2.43040321 L28,0 L32.9085797,5.20234095 L37.9730366,0 Z M17.9818927,4.43392989 L4.64144645,18.5147247 L17.9818927,32.5955195 L21.0810871,29.6079919 L10.1321127,18.5 L21.0810871,7.28442361 L17.9818927,4.43392989 Z M37.7101843,4.43392989 L35.2883953,7.44356982 L46.1323481,18.5 L35.2883953,29.7451953 L37.7101843,32 L51.3914285,18.5147247 L37.7101843,4.43392989 Z M28,14.5941371 L24.4227574,18.5 L28,22.3996382 L31.7636086,18.5147247 L28,14.5941371 Z"
+                                                    ></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="logo_text">ФЛП Егоров Д.В.</span>
+                            </a>
+                        </span>
+                        <p class="text">Надежный партнер в сфере логистики. Мы предоставляем полный комплекс услуг по доставке грузов. Мы используем современные технологии и инновации для обеспечения высокого качества наших услуг.</p>
+                    </div>
+                    <div class="footer_main-block footer_main-block--nav">
+                        <ul class="list d-flex flex-column">
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="about.html">О нас</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="calculator.html">Калькулятор тарифов</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="services.html">Услуги</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="prices.html">Тарифы</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="faq.html">Вопросы - ответы</a>
+                            </li>
+                            <li class="list-item">
+                                <i class="icon-caret_right icon"></i>
+                                <a class="link" href="contacts.html">Наши контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_main-block footer_main-block--subscribe">
+                        <h5 class="title">Подписаться</h5>
+                        <p class="text"><div>Чтобы быть в курсе новостей в мире логистики, подпишитесь на нашу рассылку</div><div><br></div></p>
+                        <form class="form d-flex justify-content-between" action="#" method="post" data-type="subscription">
+                            <input class="field required flex-grow-1" type="text" data-type="email" placeholder="Enter Your Email" />
+                            <button class="btn" type="submit">
+                                <i class="icon-paper-plane icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <ul class="footer_info d-md-flex flex-wrap">
+                    <li class="footer_info-block">
+                        <div class="main">
+                            <span class="main_label">Телефон</span>
+                            <a class="main_info link link--bold" href="tel:+1234567890">+38 (067) 410 50 77</a>
+                        </div>
+                    </li>
+                    <li class="footer_info-block footer_info-block--highlight">
+                        <div class="main">
+                            <span class="main_label">Адрес</span>
+                            <span class="main_info">08130 Киевская область, с. Чайки, ул. Авиаконструктора Антонова 1</span>
+                        </div>
+                    </li>
+                    <li class="footer_info-block">
+                        <div class="main">
+                            <span class="main_label">Email</span>
+                            <a class="main_info link" href="mailto:example@domain.com">info@logisticstoUkraine.com</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <p class="footer_copyrights">All rights reserved Copyrights <span id="currentYear"></span></p>
+            </div>
+        </footer>
+        <script src="js/common.min.js"></script>
+    </body>
+</html>
